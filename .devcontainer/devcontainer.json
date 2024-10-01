@@ -1,0 +1,17 @@
+{
+    "name": "FastAPI Development",
+    "image": "python:3.12",
+    "workspaceFolder": "/app",
+    "mounts": [
+      "source=${localWorkspaceFolder},target=/app,type=bind"
+    ],
+    "settings": {
+      "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "extensions": [
+      "ms-python.python",
+      "ms-azuretools.vscode-docker"
+    ],
+    "postCreateCommand": "pip install fastapi uvicorn"
+  }
+  
