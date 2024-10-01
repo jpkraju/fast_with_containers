@@ -9,8 +9,11 @@ open app url http://localhost:8000
 
 # docker hub commands for push/pull
 docker-compose up --build (if not done yet)
+
 docker login
 docker tag fast_with_containers-app jpkraju/fast_with_containers-app:latest
+docker push jpkraju/fast_with_containers-app:latest
+
 docker pull jpkraju/fast_with_containers-app:latest
 docker run -p 8000:8000 jpkraju/fast_with_containers-app:latest
 
