@@ -6,7 +6,7 @@ app = FastAPI()
 
 @app.get("/")
 def read_root():
-    return {"He1llo": "World..."}
+    return {"He1llo": "Automation World..."}
 
 @app.get("/test")
 def get_test():
